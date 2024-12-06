@@ -1,0 +1,14 @@
+route:
+  receiver: 'mail'
+  repeat_interval: 4h
+  group_by: [ alertname ]
+
+receivers:
+  - name: 'mail'
+    email_configs:
+      - to: 'pingpongsection@gmail.com'
+        from: 'pingpongsection@gmail.com'
+        smarthost: smtp.gmail.com:587
+        auth_username: 'pingpongsection@gmail.com'
+        auth_identity: 'pingpongsection@gmail.com'
+        auth_password: 'xqsz eanx bzxe vhri'
